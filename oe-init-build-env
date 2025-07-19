@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+DEFAULT_TEMPLATECONF="$(realpath meta-rooty/conf/templates/default)"
+TEMPLATECONF="${TEMPLATECONF:-${DEFAULT_TEMPLATECONF}}"
+export TEMPLATECONF
+
+source poky/oe-init-build-env
