@@ -1,6 +1,6 @@
 SUMMARY = "Rooty image"
 
-IMAGE_INSTALL = "packagegroup-core-boot rooty-keymap kbd-keymaps ${CORE_IMAGE_EXTRA_INSTALL}"
+IMAGE_INSTALL = "packagegroup-core-boot os-release rooty-keymap coreutils ${CORE_IMAGE_EXTRA_INSTALL}"
 
 IMAGE_LINGUAS = " "
 
