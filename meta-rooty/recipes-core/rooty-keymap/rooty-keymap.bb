@@ -14,9 +14,9 @@ do_install (){
     chmod 755 ${D}/${sysconfdir}/init.d/${INITSCRIPT_NAME}
 }
 
-FILES_${PN} = "${sysconfdir}/init.d/set-rooty-keymap.sh"
+FILES:${PN} = "${sysconfdir}/init.d/set-rooty-keymap.sh"
 
 
 KMAP ?= "${datadir}/keymaps/i386/qwertz/de-latin1.map.gz"
 
-RDEPENDS_${PN} = "kbd-keymaps"
+RDEPENDS:${PN} = "kbd kbd-keymaps"
